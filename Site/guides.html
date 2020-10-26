@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Obviate | Guides</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+h1 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  opacity: 0.8;
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+#more {display: none;}
+</style>
+</head>
+<body>
+<div class="myDiv">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html">Home</a>
+    <a href="guides.html">List of Game Guides</a>
+    <a href="faq.html">FAQ</a>
+    <a href="index.html">Sign Out</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<h1 style="text-align:center">Obviate Premium</h1>
+<h1 style="text-align:center">Game Guides (updated as of 10/31/2020)</h1></div>
+<div style="background-image: url('images/mainbg.jpg');">
+<center><h2>[NBA 2K21] Best Jumpshots for Sharp Locks!</h2>
+<img src="images/art1.jpg">
+<h3>We're glad you value defense because defense wins championships. Now we will help you on the offensive part of the game with our guide.</h3><span id="dots">...</span><span id="more"><br></br>
+<b>1. Dante Exum Base </b>- You will green at a good rate if you know the jumper, the best low 3pt jumper statistically.<br></br>
+<b>2. Trey Burke Base </b>- Easier to green than exum but slightly less consistent. We recommend this as this is the safe jumper.<br></br>
+<b>3. Dwyane Wade Base </b>- Slightly worse than burke but people really like the feel of wade.<br></br>
+<b>4. Stephen Curry Base</b> - Whites are insane, hard to green consistently with.<br></br>
+<b>5. Marquesse Chriss </b>- Second easiest to green, but less consistent. Similar to burke.</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button></center>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<br></br>
+<br></br>
+<center><h2>[Death Stranding] Where to Find Higg's Home</h2>
+<img src="images/art2.jpg"></center>
+<h3>Higgs, the skull-faced terrorist you’ll encounter multiple times as you complete Death Stranding, actually has an Easter egg infused home on the map you can check out after the game is complete. You’ll only be able to unlock his inner sanctum after the credits role, so even if you’ve found his safehouse, there’s no way to get it open.
+To find Higgs’s Home and unlock the ‘God Particle Go-Getter’ trophy, you’ll need to get pretty far into the game. The location is actually marked much earlier in the story — when you perform some very innocuous deliveries. Specifically, when you take Pizza Delivery missions.<br></br>
+Find the first Pizza Delivery mission in the Distribution Center South of Lake Knot City. The second is found at the Timefall Farm. None of them are really required, and they get increasingly lengthy as you go.If you’ve completed the game and reached Episode 15, you’ll be unable to take on these orders. Why? Because it was Higgs all along! You’ll find Higgs’ secret lair directly west of Lake Knot City, near a ridge to the east of the Middle Knot City crater. The location is labeled ‘Peter Englert’ — and you can only return when you reach Episode 15.</h3>
+<br></br>
+<br></br>
+<div class="footer">
+  <p>© 2020 Dakota-AML | All Rights Reserved.</p>
+</div>
