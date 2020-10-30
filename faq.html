@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Obviate | Guides</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+h1 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  opacity: 0.8;
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+#more {display: none;}
+</style>
+</head>
+<body>
+<div class="myDiv">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html">Home</a>
+    <a href="guides.html">List of Game Guides</a>
+    <a href="faq.html">FAQ</a>
+    <a href="index.html">Sign Out</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<h1 style="text-align:center">Obviate Premium</h1>
+<h1 style="text-align:center">FAQs</h1></div>
+<div style="background-image: url('images/mainbg.jpg');">
+<center><h2>1. DO I HAVE TO DOWNLOAD ANY SOFTWARE?</h2>
+<h3>A: No, all our info is viewable on most platforms.</h3>
+<br></br>
+<h2>2. HOW MANY GAME GUIDES DO YOU HAVE IN YOUR LIBRARY?</h2>
+<h3>A: Right now we have 3 games with 2 guides each but more to come in the future!</h3>
+<br></br>
+<h2>3. WILL THIS SITE HELP ME IN COMPETITIVE GAMES LIKE DOTA 2, VALORANT?</h2>
+<h3>A: Yes, as long as you are subscribed we will add more content.</h3>
+<br></br>
+<h2>4. WHAT ELSE COMES WITH MY SUBSCRIPTION BESIDES GAME GUIDES</h2>
+<h3>A: You will be subscribed to our newsletter and podcast!</h3>
+<br></br>
+<h2>Submit Your Own Question Here!</h2>
+	<form action="#" onsubmit="myFunction()">
+  <h3>Enter your question: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+  alert("Thank you for submitting a question! We will get back to you shortly.");
+}
+</script>
+</center>
+<div class="footer">
+  <p>© 2020 Dakota-AML | All Rights Reserved.</p>
+</div>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Obviate | Death Stranding</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+h1 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  opacity: 0.8;
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+#more {display: none;}
+</style>
+</head>
+<body>
+<div class="myDiv">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html">Home</a>
+    <a href="guides.html">List of Game Guides</a>
+    <a href="faq.html">FAQ</a>
+    <a href="index.html">Sign Out</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<h1 style="text-align:center">Obviate Premium</h1>
+<h1 style="text-align:center">Death Stranding Game Guides</h1></div>
+<div style="background-image: url('images/mainbg.jpg');">
+<center><h1>Death Stranding Materials Guide</h1></center>
+<img src="images/ds1.jpg">
+<h3>Materials consist of Chiral Crystals, Metals, Resins, Ceramics, Chemicals, and Special Alloys.</h3>
+
+Metals are needed in large quantities to build and upgrade most PCC Structures, including Bridges, and also for restoring roads using Auto Pavers.<br></br>
+Resins are needed to create a variety of smaller equipment items, including Bridges Boots.<br></br>
+Ceramics are needed in large quantities to restore roads using Auto Pavers.<br></br>
+Chemicals are needed to create special items, and used to upgrade Zip Line structures.<br></br>
+Special Alloys are needed to create and upgrade Safe Houses and more advanced items.<br></br>
+Chiral Crystals are needed for almost everything, including making Hematic Grenades and Blood Bags, building, upgrading, and repairing structures, and restoring roads with Auto Pavers.<br></br>
+
+

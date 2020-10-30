@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Obviate | Guides</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+h1 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  opacity: 0.8;
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+#more {display: none;}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+<div class="myDiv">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html">Home</a>
+    <a href="guides.html">List of Game Guides</a>
+    <a href="faq.html">FAQ</a>
+    <a href="index.html">Sign Out</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<h1 style="text-align:center">Obviate Premium</h1>
+<h1 style="text-align:center">Game Guides (updated as of 10/31/2020)</h1></div>
+<div style="background-image: url('images/mainbg.jpg');">
+<center><h2>Select Your Game</h2></center>
+<div class="row">
+  <div class="column">
+    <a href="tlou.html">
+    <img src="images/last.jpg" alt="tlou2" style="width:100%">
+  </div>
+  <div class="column">
+    <a href="nba.html"><img src="images/nba2k.jpg" alt="2k21" style="width:100%">
+  </div>
+  <div class="column">
+    <a href="ds.html"><img src="images/ds.jpg" alt="deathstranding" style="width:100%">
+  </div>
+</div>
+<div class="footer">
+  <p>© 2020 Dakota-AML | All Rights Reserved.</p>
+</div>
